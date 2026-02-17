@@ -1,0 +1,107 @@
+:root {
+  --bg: #0b0c10;
+  --fg: #e5e7eb;
+  --muted: #b3b7c3;
+  --accent: #6ee7b7;
+  --accent-2: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.site-header {
+  background: linear-gradient(180deg, rgba(11, 12, 16, .95), rgba(11, 12, 16, .85));
+  border-bottom: 1px solid #1f2430;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 14px 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links a {
+  color: var(--fg);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #0b0c10;
+}
+
+.btn.ghost {
+  border: 1px solid var(--muted);
+  color: var(--fg);
+  margin-left: 10px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 32px 20px;
+}
+
+.project {
+  background: #111217;
+  border: 1px solid #1f2430;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #1f2430;
+  color: var(--muted);
+}
