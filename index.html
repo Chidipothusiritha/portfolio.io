@@ -1,81 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Siritha Chidipothu · Data Scientist</title>
-  <meta name="description" content="Portfolio of Siritha Chidipothu — Data Scientist building end-to-end ML solutions with real business impact.">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Siritha Chidipothu | Data Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="#top">SC</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-    <section id="top" class="hero">
-      <h1>Hi, I'm <span class="accent">Siritha Chidipothu</span></h1>
-      <p class="tagline">Data Scientist focused on building <strong>end-to-end ML solutions</strong> — from clean data pipelines to production-ready models.</p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">See Projects</a>
-        <a class="btn ghost" href="assets/Siritha_Chidipothu_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
-      </div>
-    </section>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header__row">
+      <a class="brand" href="#home">Siritha Chidipothu</a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#research">Research</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span class="toggle__icon" id="themeIcon">🌙</span>
+      </button>
+    </div>
   </header>
 
   <main>
+    <!-- =========================
+         HERO (Minimal + job-ready)
+         ========================= -->
+    <section id="home" class="hero hero-min">
+      <div class="wrap hero-min__grid">
+
+        <div class="hero-min__copy">
+          <div class="kicker">Hi, I am</div>
+
+          <h1 class="hero-title">
+          Siritha <span class="grad">Chidipothu</span>
+          </h1>
+
+          
+          <h2 class="subtitle">
+            <span id="rotating" class="typing" aria-label="subtitle"></span>
+          </h2>
+
+          <div class="status" role="note" aria-label="Job search status">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span><strong>Actively seeking</strong> Data Analyst / Data Engineer / Data Scientist roles:
+              happy to connect.</span>
+          </div>
+
+          <div class="mini-links">
+            <a class="chip" href="https://www.linkedin.com/in/siritha-chidipothu-b90999216/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="chip" href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener" aria-label="GitHub">Github</a>
+            <!-- keep your resume link -->
+            <a class="chip chip--wide" href="https://drive.google.com/file/d/1vdikqabeZrnbBGE_n9eTC8zxt9c6zYsB/view?usp=sharing"
+               target="_blank" rel="noopener" aria-label="Resume">Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-min__right">
+          <div class="hero-photo card">
+            <img src="assets/avatar.jpg" alt="Portrait of Siritha"/>
+          </div>
+
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="section">
-      <h2>About</h2>
-      <p>I build data products that are accurate, reliable, and actionable. My work spans data engineering, modeling, and visualization — with a focus on measurable impact.</p>
+      <div class="wrap">
+        <h2 class="section__title">About</h2>
+
+        <div class="grid2 about-grid">
+          <div class="card pad">
+            <p class="lead">
+              I’m a Rutgers MSDS student with hands-on experience building end-to-end data workflows:
+              exploratory analysis, automation, dashboards, and production-style ML/analytics pipelines.
+            </p>
+            <ul class="bullets">
+              <li>Strong in <strong>Python + SQL</strong> for analytics, cleaning, and automation.</li>
+              <li>Comfortable with <strong>distributed systems</strong> (Spark/PySpark) and orchestration (Airflow).</li>
+              <li>Build APIs with <strong>FastAPI</strong> and work with <strong>PostgreSQL</strong>.</li>
+              
+            </ul>
+          </div>
+
+          <div class="card pad">
+            <div class="callout">
+              <div class="callout__k">What I’m looking for</div>
+              <div class="callout__t">Impact-driven data roles</div>
+              <div class="callout__d">
+                Roles focused on reliable data pipelines, strong analytics, and decision-making dashboards  with room to grow ML production skills.
+                
+              </div>
+            </div>
+            <div class="callout__d">
+              Always open to building better systems together.
+              
+            </div>
+            <div class="mini-pills">
+              <span class="pill">ETL/ELT</span>
+              <span class="pill">Data Warehousing</span>
+              <span class="pill">Dashboards</span>
+              <span class="pill">Anomaly Detection</span>
+              <span class="pill">Model Evaluation</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2 class="section__title">Projects</h2>
 
-      <article class="project">
-        <h3>Customer 360° Analytics Platform for Banking</h3>
-        <p>Full-stack data engineering project unifying marketing, transaction, and credit risk data; interactive Streamlit dashboards + FastAPI REST APIs.</p>
-        <p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">Demo</a></p>
-      </article>
+        <div class="grid3">
+          <article class="card project">
+            <img class="project__img" src="assets/placeholder5.png" alt="Fraud monitoring project cover">
+            <div class="project__body">
+              <h3>ML-Powered Fraud Monitoring & Alerting</h3>
+              <p>Low-latency feature pipeline + anomaly detection + FastAPI backend integration.</p>
+              <div class="tags">
+                <span>Python</span><span>FastAPI</span><span>Isolation Forest</span><span>Embeddings</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/ftransaction-2025" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
 
-      <article class="project">
-        <h3>Transfer Learning for Lung Disease Classification</h3>
-        <p>EfficientNet-B0–based deep learning model for TB, Pneumonia, and Normal X-ray images; achieved 95% accuracy with strong recall metrics.</p>
-        <p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">Executive brief</a></p>
-      </article>
+          <article class="card project">
+            <img class="project__img" src="assets/placeholder4.png" alt="Customer 360 project cover">
+            <div class="project__body">
+              <h3>Customer 360° Analytics Platform (Banking)</h3>
+              <p>ETL/ELT pipeline + star schema + FastAPI APIs on a PostgreSQL warehouse.</p>
+              <div class="tags">
+                <span>ETL/ELT</span><span>PostgreSQL</span><span>FastAPI</span><span>Schema Design</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/customer360_project" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
 
-      <article class="project">
-        <h3>End-to-End Credit Risk Scoring with XGBoost & SHAP</h3>
-        <p>Predictive modeling for loan defaults with severe class imbalance handling (SMOTE, scale_pos_weight); improved AUC to 0.71 and reduced false positives by 75%.</p>
-        <p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">Executive brief</a></p>
-      </article>
+          <article class="card project">
+            <img class="project__img" src="assets/placeholder1.png" alt="Analytics model project cover">
+            <div class="project__body">
+              <h3>Analytics + Modeling Work (ML/EDA)</h3>
+              <p>Feature engineering, model analysis, and stakeholder-friendly insights.</p>
+              <div class="tags">
+                <span>Python</span><span>SQL</span><span>EDA</span><span>Reporting</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          More end-to-end data and ML projects available on GitHub.
+        </p>
+      </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>ML:</strong> Scikit-learn, XGBoost, TensorFlow, Forecasting</li>
-        <li><strong>Data:</strong> Python, SQL, Pandas, PySpark, Airflow-style orchestration</li>
-        <li><strong>Explainability:</strong> SHAP, model monitoring, experiment design</li>
-        <li><strong>Viz:</strong> Power BI, Tableau, Streamlit, Matplotlib</li>
-      </ul>
+      <div class="wrap">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="grid2">
+          <article class="card pad">
+            <h3 class="h3">Data Engineering & Pipelines</h3>
+            <div class="skillchips">
+              <span>ETL/ELT Pipelines</span>
+              <span>Airflow</span>
+              <span>Azure Data Factory</span>
+              <span>Workflow Orchestration</span>
+              <span>Data Warehousing</span>
+              <span>Data Lakes</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Big Data & Distributed</h3>
+            <div class="skillchips">
+              <span>PySpark</span>
+              <span>Apache Spark</span>
+              <span>Hive</span>
+              <span>HDFS</span>
+              <span>Distributed Computing</span>
+              <span>Parallel Processing</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Databases & APIs</h3>
+            <div class="skillchips">
+              <span>SQL</span>
+              <span>NoSQL</span>
+              <span>PostgreSQL</span>
+              <span>Schema Design</span>
+              <span>FastAPI</span>
+              <span>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Cloud & Dev</h3>
+            <div class="skillchips">
+              <span>Azure</span>
+              <span>Docker</span>
+              <span>Linux</span>
+              <span>Git / CI/CD</span>
+              <span>Python</span>
+              <span>C++</span>
+              <span>Bash</span>
+              <span>Unit Testing</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="tools tools-row">
+          <figure class="card tool">
+            <img src="assets/icons/github.svg" alt="GitHub">
+            <figcaption>GitHub</figcaption>
+          </figure>
+          <figure class="card tool">
+            <img src="assets/icons/jupyter.svg" alt="Jupyter">
+            <figcaption>Jupyter</figcaption>
+          </figure>
+          <figure class="card tool">
+            <img src="assets/icons/vscode.svg" alt="VS Code">
+            <figcaption>VS Code</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="wrap">
+        <h2 class="section__title">Experience</h2>
+
+        <div class="grid2">
+          <article class="card pad">
+            <h3>Rutgers: Research Assistant <span class="muted">(Feb 2025–Present)</span></h3>
+            <ul class="bullets">
+              <li>Performed EDA on large text datasets using Python/SQL; extracted semantic trends and metrics for LLM optimization.</li>
+              <li>Improved classifier performance via feature engineering and preprocessing (measured F1 improvements).</li>
+              <li>Automated data collection/annotation pipelines to reduce manual time and improve dataset quality.</li>
+            </ul>
+          </article>
+
+          <article class="card pad">
+            <h3>URZZA: Data Science Intern <span class="muted">(Jan 2024–Apr 2024)</span></h3>
+            <ul class="bullets">
+              <li>Analyzed EV charging time-series data to detect anomalies impacting uptime and revenue.</li>
+              <li>Built KPI dashboards using SQL + Python to monitor availability, peak behavior, and success rates.</li>
+              <li>Automated cleaning + feature generation to streamline weekly analytics and reporting.</li>
+            </ul>
+          </article>
+
+          <article class="card pad">
+            <h3>ADONMO: Data Analysis Intern <span class="muted">(May 2023–Jul 2023)</span></h3>
+            <ul class="bullets">
+              <li>Automated weekly/monthly performance reporting using SQL, Python, and Power BI.</li>
+              <li>Developed regression + clustering for campaign analysis and customer segmentation.</li>
+              <li>Delivered data-driven recommendations improving targeting efficiency and ROI.</li>
+            </ul>
+          </article>
+
+          <article class="card pad">
+            <h3>What you’ll get working with me</h3>
+            <ul class="bullets">
+              <li>Clean, reproducible analysis (documentation + structured outputs).</li>
+              <li>Engineering mindset: pipelines, automation, and reliable data flows.</li>
+              <li>Clear insights for stakeholders (dashboards + narrative).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="wrap">
+        <h2 class="section__title">Research</h2>
+
+        <div class="research-grid">
+          <article class="card paper">
+            <h3>Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations</h3>
+          
+            <p class="muted">September 2025</p>
+          
+            
+          
+            <a class="btn btn--ghost"
+               href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations"
+               target="_blank"
+               rel="noopener">
+               View Paper →
+            </a>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sc2855@scarletmail.rutgers.edu">sc2855@scarletmail.rutgers.edu</a> · 
-         LinkedIn: <a href="https://www.linkedin.com/in/siritha-chidipothu-b90999216/" target="_blank" rel="noopener">siritha-chidipothu</a> · 
-         GitHub: <a href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener">@Chidipothusiritha</a></p>
+      <div class="wrap">
+    
+        <h2 class="section__title">Contact</h2>
+    
+        <div class="contact-grid">
+    
+          <!-- LEFT SIDE -->
+          <div class="contact-left">
+    
+            <p class="contact-intro">
+              I’m actively seeking data roles. If you’re hiring or want to collaborate,
+              I’d love to talk.
+            </p>
+    
+            <article class="card field">
+              <div class="field__icon">✉️</div>
+              <div>
+                <div class="field__title">Email</div>
+                <a href="mailto:siritha.chidipothu@rutgers.edu">
+                  siritha.chidipothu@rutgers.edu
+                </a>
+              </div>
+            </article>
+    
+            <article class="card field">
+              <div class="field__icon">📍</div>
+              <div>
+                <div class="field__title">Location</div>
+                <div>New Brunswick, NJ</div>
+              </div>
+            </article>
+    
+            <article class="card field">
+              <div class="field__icon">🔗</div>
+              <div>
+                <div class="field__title">LinkedIn</div>
+                <a href="YOUR_LINKEDIN_URL" target="_blank">
+                  Connect with me →
+                </a>
+              </div>
+            </article>
+    
+            <article class="card field field--resume">
+              <div class="field__icon">📄</div>
+    
+              <div class="field__content">
+                <div class="field__title">Resume</div>
+                <div class="field__meta">Updated</div>
+              </div>
+    
+              <a class="btn btn--primary btn--sm"
+                 href="https://drive.google.com/file/d/1vdikqabeZrnbBGE_n9eTC8zxt9c6zYsB/view?usp=sharing"
+                 target="_blank">
+                View Resume →
+              </a>
+            </article>
+    
+          </div>
+    
+          <!-- RIGHT SIDE -->
+          <div class="contact-right">
+            <div class="code-panel">
+    <pre><code># Example: readable data workflow
+    import pandas as pd
+    
+    df = pd.read_csv("data.csv")
+    df = df.drop_duplicates().dropna()
+    
+    df["event_time"] = pd.to_datetime(df["event_time"])
+    
+    kpi = (df.groupby("category")["amount"]
+           .sum()
+           .sort_values(ascending=False)
+           .head(10))
+    
+    print(kpi)
+    </code></pre>
+            </div>
+          </div>
+    
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>© 2025 · Built for recruiters and hiring managers · GitHub Pages ready.</p>
-  </footer>
-</body>
-</html>
+    <script src="script.js"></script>
