@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
       "Data Science @ Rutgers",
       "Data Analyst • Data Engineer • Data Scientist",
+      "ML Enginner • AI Enginner ",
       "Python • SQL • Spark • Airflow",
       "RAG & Agentic AI Explorer",
       "Actively seeking roles"
