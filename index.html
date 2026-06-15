@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Siritha Chidipothu | AI/ML Engineer Portfolio</title>
+  <meta name="description" content="Siritha Chidipothu — AI/ML Engineer, Rutgers MSDS. Building LLM pipelines, RAG systems, MCP servers, and production ML. Open to AI/ML, Data Engineer, and Data Analyst roles."/>
+  <meta property="og:title" content="Siritha Chidipothu | AI/ML Engineer Portfolio"/>
+  <meta property="og:description" content="MCP servers · RAG pipelines · LLM evaluation · Harvard Dataverse · Published research. Ask my AI agent anything about my work."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="assets/avatar1.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Siritha Chidipothu | AI/ML Engineer"/>
+  <meta name="twitter:description" content="AI/ML Engineer · Rutgers MSDS · MCP · RAG · LLM Evaluation · Harvard Dataverse Dataset"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=12"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header__row">
+      <a class="brand" href="#home">Siritha Chidipothu</a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#research">Research</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span class="toggle__icon" id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO (Minimal + job-ready)
+         ========================= -->
+    <section id="home" class="hero hero-min">
+      <div class="wrap hero-min__grid">
+
+        <div class="hero-min__copy">
+          <div class="kicker">Hi, I'm</div>
+
+          <h1 class="hero-title">
+          Siritha <span class="grad">Chidipothu</span>
+          </h1>
+
+          
+          <h2 class="subtitle">
+            <span id="rotating" class="typing" aria-label="subtitle"></span>
+          </h2>
+
+          <div class="status" role="note" aria-label="Job search status">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span><strong>Actively seeking:</strong> AI/ML Engineer · Data Engineer · Data Analyst · Data Scientist —
+              happy to connect.</span>
+          </div>
+
+          <div class="mini-links">
+            <a class="chip" href="https://www.linkedin.com/in/siritha-chidipothu-b90999216/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="chip" href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <!-- keep your resume link -->
+            <a class="chip chip--wide" href="https://drive.google.com/file/d/1EUVO2K1dtsfDn4q62Y6d0nSRcM9nZRbt/view?usp=sharing"
+               target="_blank" rel="noopener" aria-label="Resume">Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-min__right">
+          <div class="hero-photo card">
+            <img src="assets/avatar1.jpg" alt="Portrait of Siritha"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- STATS CUBES -->
+    <section class="stats-section">
+      <div class="wrap">
+        <div class="stats-grid">
+          <div class="stat-cube">
+            <span class="stat__n" data-target="5">0</span>
+            <span class="stat__l">Roles &amp; Internships</span>
+          </div>
+          <div class="stat-cube">
+            <span class="stat__n" data-target="5">0</span>
+            <span class="stat__l">Projects Built</span>
+          </div>
+          <div class="stat-cube">
+            <span class="stat__n" data-target="5">0</span>
+            <span class="stat__l">Research Outputs</span>
+          </div>
+          <div class="stat-cube">
+            <span class="stat__n" data-target="1">0</span>
+            <span class="stat__l">Harvard Dataverse Dataset</span>
+          </div>
+          <div class="stat-cube">
+            <span class="stat__n" data-target="3">0</span>
+            <span class="stat__l">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section__title">About</h2>
+
+        <div class="grid2 about-grid">
+          <div class="card pad">
+            <p class="lead">
+              I’m a Rutgers MSDS student and AI/Data Science Research Assistant building ML models,
+              NLP pipelines, LLM evaluation frameworks, and production AI systems — including an MCP server
+              currently running in production.
+            </p>
+            <ul class="bullets">
+              <li>Build and evaluate <strong>ML/NLP models</strong> — classifiers, anomaly detection, few-shot & zero-shot learning.</li>
+              <li>Build <strong>LLM and RAG</strong> systems: MCP servers, tool-calling pipelines, multi-agent orchestration, and vector search.</li>
+              <li>Strong in <strong>Python + SQL</strong> with distributed systems (Spark/PySpark) and orchestration (Airflow).</li>
+              <li>Deploy models via <strong>FastAPI</strong>, evaluate with Ragas/LLM-as-judge, and track experiments end-to-end.</li>
+            </ul>
+          </div>
+
+          <div class="card pad">
+            <div class="callout">
+              <div class="callout__k">What I’m looking for</div>
+              <div class="callout__t">AI/ML · Data Engineering · Analytics</div>
+              <div class="callout__d">
+                Primarily targeting <strong>AI/ML Engineer</strong> roles — building LLM pipelines, RAG systems, and
+                intelligent applications. Also open to <strong>Data Engineer</strong> and <strong>Data Analyst</strong>
+                roles where I can apply my end-to-end data and ML skills.
+              </div>
+              <div class="callout__d" style="margin-top:10px;font-style:italic;">
+                Always open to building smarter systems together.
+              </div>
+            </div>
+            <div class="mini-pills">
+              <span class="pill">LLMs & RAG</span>
+              <span class="pill">MCP & Agentic AI</span>
+              <span class="pill">NLP / Text ML</span>
+              <span class="pill">Data Pipelines</span>
+              <span class="pill">MLOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="wrap">
+        <h2 class="section__title">Education</h2>
+
+        <div class="grid2">
+          <article class="card pad highlight-card">
+            <div class="exp-badge">MS</div>
+            <h3>Rutgers University <span class="muted" style="display:block;font-size:.78rem;font-weight:600;margin-top:3px;">Sep 2024 – May 2026</span></h3>
+            <p style="font-size:1rem;font-weight:600;margin:6px 0 4px;color:var(--fg)">Master of Science in Data Science <span style="font-weight:400;color:var(--muted)">· Statistics Track</span></p>
+            <p style="color:var(--muted);font-size:.92rem;line-height:1.6;margin-bottom:10px;">New Brunswick, NJ</p>
+            <div class="tags">
+              <span>Machine Learning</span><span>NLP</span><span>Statistical Modeling</span><span>Deep Learning</span><span>Data Engineering</span><span>LLM Research</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge" style="background:rgba(99,102,241,.12);color:#6366f1;border-color:rgba(99,102,241,.25);">BTech</div>
+            <h3>Gandhi Institute of Technology and Management <span class="muted" style="display:block;font-size:.78rem;font-weight:600;margin-top:3px;">Sep 2020 – May 2024</span></h3>
+            <p style="font-size:1rem;font-weight:600;margin:6px 0 4px;color:var(--fg)">Bachelor of Technology <span style="font-weight:400;color:var(--muted)">· Computer Science and Engineering</span></p>
+            <p style="color:var(--muted);font-size:.92rem;line-height:1.6;margin-bottom:10px;">India</p>
+            <div class="tags">
+              <span>Computer Science</span><span>Data Structures</span><span>Algorithms</span><span>Statistics</span><span>Databases</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="grid2">
+          <article class="card pad">
+            <h3 class="h3">AI/ML & Deep Learning</h3>
+            <div class="skillchips">
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>Scikit-learn</span>
+              <span>XGBoost / LightGBM</span>
+              <span>HuggingFace Transformers</span>
+              <span>Fine-tuning / LoRA</span>
+              <span>NLP / Text Classification</span>
+              <span>Feature Engineering</span>
+              <span>Model Evaluation</span>
+              <span>Pandas / NumPy</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">LLMs & Generative AI</h3>
+            <div class="skillchips">
+              <span>OpenAI API / GPT-4o</span>
+              <span>LangChain</span>
+              <span>RAG Pipelines</span>
+              <span>MCP (Model Context Protocol)</span>
+              <span>Tool Calling</span>
+              <span>Multi-agent Orchestration</span>
+              <span>Embeddings</span>
+              <span>Vector Databases</span>
+              <span>Few-Shot / Zero-Shot</span>
+              <span>Prompt Engineering</span>
+              <span>LLM Evaluation</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Data Engineering & MLOps</h3>
+            <div class="skillchips">
+              <span>ETL/ELT Pipelines</span>
+              <span>Apache Airflow</span>
+              <span>dbt</span>
+              <span>Kafka</span>
+              <span>Databricks</span>
+              <span>Snowflake</span>
+              <span>Azure Data Factory</span>
+              <span>MLflow</span>
+              <span>Weights & Biases</span>
+              <span>Docker</span>
+              <span>Data Warehousing</span>
+              <span>Delta Lake</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Big Data & Distributed</h3>
+            <div class="skillchips">
+              <span>PySpark</span>
+              <span>Apache Spark</span>
+              <span>Hive</span>
+              <span>HDFS</span>
+              <span>Distributed Computing</span>
+              <span>Parallel Processing</span>
+              <span>Batch Processing</span>
+              <span>Stream Processing</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Databases & APIs</h3>
+            <div class="skillchips">
+              <span>SQL</span>
+              <span>PostgreSQL</span>
+              <span>pgvector</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>NoSQL</span>
+              <span>Schema Design</span>
+              <span>FastAPI</span>
+              <span>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Analytics & Visualization</h3>
+            <div class="skillchips">
+              <span>Power BI</span>
+              <span>Tableau</span>
+              <span>Matplotlib / Seaborn</span>
+              <span>Statistical Analysis</span>
+              <span>A/B Testing</span>
+              <span>KPI Dashboards</span>
+              <span>Excel / Google Sheets</span>
+              <span>Data Storytelling</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <h3 class="h3">Cloud & Dev</h3>
+            <div class="skillchips">
+              <span>Azure</span>
+              <span>AWS</span>
+              <span>Python</span>
+              <span>Java / Spring Boot</span>
+              <span>Git / CI/CD</span>
+              <span>Docker</span>
+              <span>Linux</span>
+              <span>Bash</span>
+              <span>Unit Testing</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="tools tools-row">
+          <figure class="card tool">
+            <img src="assets/icons/github.svg" alt="GitHub">
+            <figcaption>GitHub</figcaption>
+          </figure>
+          <figure class="card tool">
+            <img src="assets/icons/jupyter.svg" alt="Jupyter">
+            <figcaption>Jupyter</figcaption>
+          </figure>
+          <figure class="card tool">
+            <img src="assets/icons/vscode.svg" alt="VS Code">
+            <figcaption>VS Code</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="wrap">
+        <h2 class="section__title">Experience</h2>
+
+        <div class="grid2">
+          <article class="card pad highlight-card">
+            <div class="exp-badge">AI/ML</div>
+            <h3>Ascend Cargo Systems: AI/ML Engineer Intern <span class="muted">(May 2026–Present)</span></h3>
+            <ul class="bullets">
+              <li>Designed a custom <strong>MCP (Model Context Protocol) server</strong> on a Java Spring Boot backend, exposing annotation-based LLM-callable tools across web chatbot, Slack, and Teams channels.</li>
+              <li>Built a <strong>two-LLM pipeline</strong> — a lightweight classifier routing queries into a GPT-4o tool loop — injecting only category-relevant tools per query, reducing prompt size and improving tool-calling accuracy.</li>
+            </ul>
+            <div class="tags" style="margin-top:10px">
+              <span>MCP</span><span>GPT-4o</span><span>Java Spring Boot</span><span>LLM Routing</span><span>Slack/Teams</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge">DE</div>
+            <h3>National Transit Institute: Data Engineer Assistant <span class="muted">(May 2026–Present)</span></h3>
+            <ul class="bullets">
+              <li>Automated generation of financial reports and working sheets, eliminating years of manual effort across the organization.</li>
+              <li>Built end-to-end reporting pipelines that produce consistent, audit-ready outputs with minimal human intervention.</li>
+            </ul>
+            <div class="tags" style="margin-top:10px">
+              <span>Python</span><span>Automation</span><span>ETL</span><span>Reporting</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge">Research</div>
+            <h3>Rutgers University: AI & Data Science Research Assistant <span class="muted">(Feb 2025–Present)</span></h3>
+            <ul class="bullets">
+              <li>Performed EDA on large text datasets using Python/SQL; extracted semantic trends and content signals to guide model training and dataset curation.</li>
+              <li>Improved classifier performance via feature engineering and preprocessing (measured F1 improvements).</li>
+              <li>Automated data collection/annotation pipelines to reduce manual time and improve dataset quality.</li>
+            </ul>
+            <div class="tags" style="margin-top:10px">
+              <span>Python</span><span>SQL</span><span>NLP</span><span>LLM Optimization</span><span>Feature Engineering</span><span>Text Analytics</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge">DS</div>
+            <h3>URZZA: Data Science Intern <span class="muted">(Jan 2024–Apr 2024)</span></h3>
+            <ul class="bullets">
+              <li>Analyzed EV charging time-series data to detect anomalies impacting uptime and revenue.</li>
+              <li>Built KPI dashboards using SQL + Python to monitor availability, peak behavior, and success rates.</li>
+              <li>Automated cleaning + feature generation to streamline weekly analytics and reporting.</li>
+            </ul>
+            <div class="tags" style="margin-top:10px">
+              <span>Python</span><span>SQL</span><span>Time-Series</span><span>Anomaly Detection</span><span>KPI Dashboards</span><span>Feature Engineering</span>
+            </div>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge">DA</div>
+            <h3>ADONMO: Data Analysis Intern <span class="muted">(May 2023–Jul 2023)</span></h3>
+            <ul class="bullets">
+              <li>Automated weekly/monthly performance reporting using SQL, Python, and Power BI.</li>
+              <li>Developed regression + clustering for campaign analysis and customer segmentation.</li>
+              <li>Delivered data-driven recommendations improving targeting efficiency and ROI.</li>
+            </ul>
+            <div class="tags" style="margin-top:10px">
+              <span>SQL</span><span>Python</span><span>Power BI</span><span>Regression</span><span>Clustering</span><span>Customer Segmentation</span>
+            </div>
+          </article>
+
+          <article class="card pad highlight-card">
+            <div class="exp-badge">Why Me</div>
+            <h3>What you’ll get working with me</h3>
+            <p style="color:var(--muted);line-height:1.7;margin:8px 0 10px">
+              AI isn’t optional anymore — it’s the baseline. The candidates who stand out today aren’t just
+              those who know data; they’re the ones who know how to make <strong>AI work in production</strong>.
+            </p>
+            <ul class="bullets">
+              <li><strong>AI-native from day one</strong> — I’ve built MCP servers, two-LLM routing pipelines, RAG systems, and LLM evaluation frameworks, not just used ChatGPT.</li>
+              <li><strong>Research + engineering in one</strong> — published datasets, conference papers, and journal submissions backed by real code and production deployments.</li>
+              <li><strong>Full-stack data fluency</strong> — I can take a business problem from raw data → pipeline → model → API → dashboard, without hand-offs.</li>
+              <li><strong>Fast and curious</strong> — I pick up new tools quickly because I understand the fundamentals, not just the frameworks.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="grid2 projects-grid">
+          <article class="card project featured-project">
+            <div class="project__banner project__banner--quant">
+              <span class="banner__label">Quant · Equity · Backtesting</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="proj-badge">Featured</span>
+              </div>
+              <h3>Quant Signal Platform — Long-Short Equity Strategy</h3>
+              <p>End-to-end equity strategy platform on 30 S&P 500 stocks. Ingests daily OHLCV prices from yfinance and SEC EDGAR 10-K/10-Q filings into a PostgreSQL warehouse orchestrated by Apache Airflow.</p>
+              <p>Engineered a signal library combining momentum (20d/60d), mean reversion (z-score, RSI), and volatility regime classification. Validated through a vectorized backtester with transaction-cost modeling — monthly Top5/Bottom5 achieved <strong>Sharpe 0.82 · 19.4% annualized return</strong>; weekly rebalances collapsed to ~0 Sharpe, confirming a 20–60 day signal persistence horizon.</p>
+              <div class="tags">
+                <span>Python</span><span>PostgreSQL</span><span>Airflow</span><span>yfinance</span><span>SEC EDGAR</span><span>Backtesting</span><span>Sharpe / Drawdown</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/quant-signal-platform" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__banner project__banner--fraud">
+              <span class="banner__label">ML · Anomaly Detection · FastAPI</span>
+            </div>
+            <div class="project__body">
+              <h3>ML-Powered Fraud Monitoring & Alerting</h3>
+              <p>Real-time transaction fraud detection using Isolation Forest anomaly detection on engineered behavioral features. Serves predictions through a low-latency FastAPI backend with alert routing for flagged transactions.</p>
+              <div class="tags">
+                <span>Python</span><span>FastAPI</span><span>Isolation Forest</span><span>Feature Engineering</span><span>Embeddings</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/ftransaction-2025" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__banner project__banner--analytics">
+              <span class="banner__label">ETL · PostgreSQL · Data Warehouse</span>
+            </div>
+            <div class="project__body">
+              <h3>Customer 360° Analytics Platform (Banking)</h3>
+              <p>End-to-end ETL/ELT pipeline consolidating customer data into a star-schema PostgreSQL warehouse. Exposes unified customer profiles via FastAPI, enabling segmentation, churn risk scoring, and real-time analytics.</p>
+              <div class="tags">
+                <span>ETL/ELT</span><span>PostgreSQL</span><span>FastAPI</span><span>Star Schema</span><span>Segmentation</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/customer360_project" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__banner project__banner--nlp">
+              <span class="banner__label">NLP · Few-Shot · LLM Evaluation</span>
+            </div>
+            <div class="project__body">
+              <h3>NLP Text Classifier & LLM Evaluation (Research)</h3>
+              <p>Few-shot vs. zero-shot classifiers on Reddit mental health data; FEEG framework to evaluate LLM cognitive-level performance using Bloom’s Taxonomy.</p>
+              <div class="tags">
+                <span>Python</span><span>HuggingFace</span><span>Few-Shot</span><span>LLM Evaluation</span>
+              </div>
+              <span class="link muted" style="font-size:.9rem">Research project — repo coming soon</span>
+            </div>
+          </article>
+
+          <article class="card project featured-project">
+            <div class="project__banner project__banner--filings">
+              <span class="banner__label">RAG · pgvector · Ragas · LLM-as-judge</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="proj-badge">Building Now</span>
+              </div>
+              <h3>FilingsQA — Evaluated RAG Assistant over SEC Filings</h3>
+              <p>Retrieval-augmented assistant that answers natural-language questions over SEC 10-K/10-Q filings via an EDGAR → pgvector → Bedrock/OpenAI pipeline, returning citation-grounded answers through a FastAPI service.</p>
+              <p>Building a labeled evaluation harness using <strong>Ragas + LLM-as-judge</strong> to measure retrieval precision, answer faithfulness, latency, and cost — including abstention scoring on unanswerable questions.</p>
+              <div class="tags">
+                <span>Python</span><span>FastAPI</span><span>pgvector</span><span>AWS Bedrock</span><span>OpenAI API</span><span>Ragas</span><span>LLM-as-judge</span><span>SEC EDGAR</span>
+              </div>
+              <span class="link muted" style="font-size:.9rem">In progress · Jun 2026</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          More end-to-end data and ML projects available on GitHub.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section alt">
+      <div class="wrap">
+        <h2 class="section__title">Research</h2>
+
+        <div class="grid2">
+          <article class="card paper">
+            <span class="research-badge research-badge--dataset">Dataset · Harvard Dataverse</span>
+            <h3>Global Artificial Intelligence News Headlines Corpus</h3>
+            <p class="muted">Published · Harvard Dataverse</p>
+            <p>A large-scale corpus of AI-related news headlines curated for NLP research — supports topic modeling, sentiment analysis, trend detection, and media framing studies around artificial intelligence.</p>
+            <a class="btn btn--ghost"
+               href="https://dataverse.harvard.edu/dataverse/global_artificial_intelligence_news_headlines_corpus"
+               target="_blank"
+               rel="noopener">
+               View Dataset →
+            </a>
+          </article>
+
+          <article class="card paper">
+            <span class="research-badge research-badge--submitted">Under Review · Data &amp; Policy</span>
+            <h3>AI Narratives Across Global Media: An Open Multi-Level News Headlines Dataset for Interdisciplinary Research</h3>
+            <p class="muted">Submitted — Data &amp; Policy Journal (Cambridge University Press)</p>
+            <p>Introduces an open, multi-level corpus of global AI news headlines for interdisciplinary research — enabling cross-lingual, temporal, and framing analyses of how AI is portrayed in global media.</p>
+          </article>
+
+          <article class="card paper">
+            <span class="research-badge research-badge--published">Published · 2025</span>
+            <h3>Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations</h3>
+            <p class="muted">Published · September 2025</p>
+            <p>Examines how chatbot adoption is reshaping individual behavior and organizational workflows, drawing on public perception data to surface trust, privacy, and productivity implications.</p>
+            <a class="btn btn--ghost"
+               href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations"
+               target="_blank"
+               rel="noopener">
+               View Paper →
+            </a>
+          </article>
+
+          <article class="card paper">
+            <span class="research-badge research-badge--conference">Conference · NEDSI</span>
+            <h3>Adaptive Few‐Shot Learning versus Hyper‐AFSL, Zero‐Shot and Few‐Shot Learning: An AI Methods‐Centric Study Using Reddit Cannabis and Depression Posts</h3>
+            <p class="muted">Northeast Decision Sciences Institute (NEDSI)</p>
+            <p>Benchmarks adaptive few-shot, Hyper-AFSL, zero-shot, and standard few-shot classifiers on sensitive Reddit mental health and substance-use data — quantifying when adaptation yields real-world classification gains.</p>
+          </article>
+
+          <article class="card paper">
+            <span class="research-badge badge--poster">Research Poster</span>
+            <h3>FEEG: Bloom’s Taxonomy-Based Query Classification Framework</h3>
+            <p class="muted">LLM Evaluation · Rutgers University</p>
+            <p>Classifies LLM queries into Finder, Evaluator, Explainer, and Generator categories to evaluate cognitive-level performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+    
+        <h2 class="section__title">Contact</h2>
+    
+        <div class="contact-grid">
+    
+          <!-- LEFT SIDE -->
+          <div class="contact-left">
+    
+            <p class="contact-intro">
+              I’m actively seeking <strong>AI/ML Engineer</strong>, <strong>Data Engineer</strong>, and <strong>Data Analyst</strong> roles. If you’re hiring or want to collaborate, I’d love to talk.
+            </p>
+    
+            <article class="card field">
+              <div class="field__icon">✉️</div>
+              <div>
+                <div class="field__title">Email</div>
+                <a href="mailto:siritha.chidipothu@rutgers.edu">
+                  siritha.chidipothu@rutgers.edu
+                </a>
+              </div>
+            </article>
+    
+            <article class="card field">
+              <div class="field__icon">📍</div>
+              <div>
+                <div class="field__title">Location</div>
+                <div>New Brunswick, NJ</div>
+              </div>
+            </article>
+    
+            <article class="card field">
+              <div class="field__icon">🔗</div>
+              <div>
+                <div class="field__title">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/siritha-chidipothu-b90999216/" target="_blank" rel="noopener">
+                  Connect with me →
+                </a>
+              </div>
+            </article>
+    
+            <article class="card field field--resume">
+              <div class="field__icon">📄</div>
+    
+              <div class="field__content">
+                <div class="field__title">Resume</div>
+                <div class="field__meta">Updated</div>
+              </div>
+    
+              <a class="btn btn--primary btn--sm"
+                 href="https://drive.google.com/file/d/1vdikqabeZrnbBGE_n9eTC8zxt9c6zYsB/view?usp=sharing"
+                 target="_blank">
+                View Resume →
+              </a>
+            </article>
+    
+          </div>
+    
+          <!-- RIGHT SIDE -->
+          <div class="contact-right">
+            <div class="code-panel">
+    <pre><code># FilingsQA — RAG over SEC 10-K/10-Q filings
+import psycopg2
+from openai import OpenAI
+
+client = OpenAI()
+
+def retrieve_and_answer(query: str, conn) -> dict:
+    vec = client.embeddings.create(
+        input=query, model="text-embedding-3-small"
+    ).data[0].embedding
+
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT chunk_text, source_file
+        FROM filings_chunks
+        ORDER BY embedding <=> %s::vector
+        LIMIT 5
+    """, (vec,))
+    hits = cur.fetchall()
+
+    context = "\n\n".join(r[0] for r in hits)
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "Answer using only the context provided."},
+            {"role": "user", "content": f"Context:\n{context}\n\nQ: {query}"}
+        ]
+    )
+    return {"answer": response.choices[0].message.content,
+            "sources": [r[1] for r in hits]}
+    </code></pre>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <!-- AI CHAT AGENT -->
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-panel" id="chatPanel" aria-hidden="true">
+        <div class="chat-header">
+          <div class="chat-header__info">
+            <span class="chat-status-dot"></span>
+            <div>
+              <div class="chat-header__name">Siritha's AI</div>
+              <div class="chat-header__sub">Ask me anything about her portfolio</div>
+            </div>
+          </div>
+          <button class="chat-close" id="chatClose" aria-label="Close">✕</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-msg chat-msg--ai">
+            <p>Hi! I'm Siritha's AI assistant. Ask me about her skills, projects, experience, or research — I'm happy to help!</p>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <input class="chat-input" id="chatInput" type="text" placeholder="Ask about her experience..." autocomplete="off"/>
+          <button class="chat-send" id="chatSend" aria-label="Send">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+      <button class="chat-fab" id="chatFab" aria-label="Open AI assistant">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>Ask AI</span>
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap">
+        <p>© <span id="year"></span> Siritha Chidipothu · Built with purpose, powered by curiosity.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/siritha-chidipothu-b90999216/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:siritha.chidipothu@rutgers.edu">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
