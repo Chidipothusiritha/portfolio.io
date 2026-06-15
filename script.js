@@ -156,9 +156,12 @@ PAST EXPERIENCE:
 PROJECTS:
 1. Quant Signal Platform (Jan 2026–Present): End-to-end long-short equity strategy on 30 S&P 500 stocks. Sharpe 0.82, 19.4% annualized return. PostgreSQL + Airflow + yfinance + SEC EDGAR.
 2. FilingsQA (Jun 2026–Present): Evaluated RAG assistant over SEC 10-K/10-Q filings. EDGAR → pgvector → AWS Bedrock/OpenAI. Ragas + LLM-as-judge evaluation harness.
-3. ML-Powered Fraud Monitoring: Isolation Forest anomaly detection + FastAPI backend.
-4. Customer 360° Analytics Platform (Banking): ETL/ELT pipeline, star schema, PostgreSQL warehouse.
-5. NLP Text Classifier & LLM Evaluation: Few-shot vs zero-shot on Reddit data; FEEG framework for LLM cognitive-level evaluation using Bloom's Taxonomy.
+3. Lung Disease Detection via Transfer Learning: Sequential transfer learning with EfficientNet-B0 on chest X-rays. 95% accuracy, 100% normal recall, 94% TB recall, 0.98+ AUC. Explored DANN domain adaptation.
+4. ML-Powered Fraud Monitoring: Isolation Forest anomaly detection + FastAPI backend.
+5. Customer 360° Analytics Platform (Banking): ETL/ELT pipeline, star schema, PostgreSQL warehouse.
+6. NLP Text Classifier & LLM Evaluation: Few-shot vs zero-shot on Reddit data; FEEG framework for LLM cognitive-level evaluation using Bloom's Taxonomy.
+7. Financial Wellness Assessment Platform: Full-stack Django REST + React + PostgreSQL + Docker app. Adaptive 9-question risk engine scoring users across Banking Access, Emergency Preparedness, Spending Behavior, and Financial Literacy. JWT auth, risk tiers (Low/Medium/High), per-section breakdowns.
+8. Code-Mixed Language Translation (Hinglish & Spanglish): Benchmarked MarianMT, mT5-small, and NLLB-200-Distilled-600M for translating code-mixed text into English. Fine-tuned on parallel corpora, evaluated with BLEU scores via sacrebleu.
 
 SKILLS: PyTorch, TensorFlow, Scikit-learn, XGBoost, HuggingFace Transformers, Fine-tuning/LoRA, OpenAI API/GPT-4o, LangChain, RAG, MCP, Tool Calling, Multi-agent Orchestration, PySpark, Apache Spark, Airflow, dbt, Kafka, Databricks, Snowflake, PostgreSQL, MySQL, MongoDB, FastAPI, Azure, AWS, Docker, Power BI, Tableau, Python, SQL, Java/Spring Boot.
 

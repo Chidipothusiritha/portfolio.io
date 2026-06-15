@@ -277,6 +277,15 @@ section{scroll-margin-top:90px}
 .project__banner--filings{
   background: linear-gradient(135deg, #0a1a2e, #0f3460, #1a6b8a);
 }
+.project__banner--medical{
+  background: linear-gradient(135deg, #0a0f1a, #1a2a4a, #0e6b6b);
+}
+.project__banner--finwellness{
+  background: linear-gradient(135deg, #1a1200, #4a3000, #b7860b);
+}
+.project__banner--codemix{
+  background: linear-gradient(135deg, #1a0a1a, #5c1a4a, #b5006e);
+}
 .project__body{padding:16px}
 .project__body p{color:var(--muted);margin:.4rem 0 .8rem;line-height:1.6}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:.3rem 0 .6rem}

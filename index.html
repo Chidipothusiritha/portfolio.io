@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=12"/>
+  <link rel="stylesheet" href="style.css?v=16"/>
 </head>
 
 <body>
@@ -30,6 +30,7 @@
         <a class="nav__link active" href="#home">Home</a>
         <a class="nav__link" href="#about">About</a>
         <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#certifications">Certifications</a>
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#experience">Experience</a>
         <a class="nav__link" href="#projects">Projects</a>
@@ -96,7 +97,7 @@
             <span class="stat__l">Roles &amp; Internships</span>
           </div>
           <div class="stat-cube">
-            <span class="stat__n" data-target="5">0</span>
+            <span class="stat__n" data-target="8">0</span>
             <span class="stat__l">Projects Built</span>
           </div>
           <div class="stat-cube">
@@ -189,8 +190,37 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="wrap">
+        <h2 class="section__title">Certifications</h2>
+
+        <div class="grid2">
+          <article class="card pad highlight-card">
+            <div class="exp-badge" style="background:rgba(239,68,68,.12);color:#ef4444;border-color:rgba(239,68,68,.28);">Anthropic</div>
+            <h3>Introduction to Model Context Protocol</h3>
+            <p style="font-size:.92rem;color:var(--muted);margin:6px 0 10px;">Anthropic Education</p>
+            <p style="font-size:.92rem;line-height:1.6;color:var(--muted);margin-bottom:12px;">
+              Credential covering the Model Context Protocol — the open standard for connecting LLMs to external tools and data sources. Directly applied building a production MCP server at Ascend Cargo Systems.
+            </p>
+            <a class="btn btn--ghost" href="https://verify.skilljar.com/c/2spkuqkm6x9o" target="_blank" rel="noopener">Verify Certificate →</a>
+          </article>
+
+          <article class="card pad">
+            <div class="exp-badge" style="background:rgba(239,68,68,.12);color:#ef4444;border-color:rgba(239,68,68,.28);">Anthropic</div>
+            <h3>Claude 101</h3>
+            <p style="font-size:.92rem;color:var(--muted);margin:6px 0 10px;">Anthropic Education</p>
+            <p style="font-size:.92rem;line-height:1.6;color:var(--muted);margin-bottom:12px;">
+              Foundational credential covering Claude's capabilities, prompting techniques, and responsible use — applied across LLM evaluation, RAG pipelines, and agentic AI projects.
+            </p>
+            <a class="btn btn--ghost" href="https://verify.skilljar.com/c/ni9rgzmsdmby" target="_blank" rel="noopener">Verify Certificate →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section alt">
       <div class="wrap">
         <h2 class="section__title">Skills</h2>
 
@@ -323,7 +353,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section alt">
+    <section id="experience" class="section">
       <div class="wrap">
         <h2 class="section__title">Experience</h2>
 
@@ -410,7 +440,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects" class="section alt">
       <div class="wrap">
         <h2 class="section__title">Projects</h2>
 
@@ -475,6 +505,20 @@
             </div>
           </article>
 
+          <article class="card project">
+            <div class="project__banner project__banner--medical">
+              <span class="banner__label">Transfer Learning · EfficientNet · Medical AI</span>
+            </div>
+            <div class="project__body">
+              <h3>Lung Disease Detection via Transfer Learning</h3>
+              <p>Sequential transfer learning with EfficientNet-B0 on chest X-rays. Phase 1 fine-tuned on pneumonia data (92% accuracy, 0.98 AUC). Phase 2 sequentially adapted for TB detection — achieving <strong>95% accuracy · 100% normal recall · 94% TB recall · 0.98+ AUC</strong>. Explored DANN domain adaptation as an alternative approach.</p>
+              <div class="tags">
+                <span>PyTorch</span><span>EfficientNet-B0</span><span>Transfer Learning</span><span>Medical Imaging</span><span>albumentations</span><span>scikit-learn</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/transfer-learning" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
           <article class="card project featured-project">
             <div class="project__banner project__banner--filings">
               <span class="banner__label">RAG · pgvector · Ragas · LLM-as-judge</span>
@@ -494,6 +538,36 @@
           </article>
         </div>
 
+          <article class="card project">
+            <div class="project__banner project__banner--codemix">
+              <span class="banner__label">NLP · Seq2Seq · Multilingual · BLEU</span>
+            </div>
+            <div class="project__body">
+              <h3>Code-Mixed Language Translation (Hinglish & Spanglish)</h3>
+              <p>Benchmarked three seq2seq architectures — MarianMT, mT5-small, and NLLB-200-Distilled-600M — for translating code-mixed text (Hinglish and Spanglish) into English. Fine-tuned each model on parallel corpora and evaluated using BLEU scores via sacrebleu.</p>
+              <div class="tags">
+                <span>PyTorch</span><span>HuggingFace</span><span>MarianMT</span><span>mT5</span><span>NLLB-200</span><span>BLEU</span><span>Multilingual NLP</span>
+              </div>
+              <a class="link" href="https://github.com/sanjitharajesh/codemixtranslation" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__banner project__banner--finwellness">
+              <span class="banner__label">Full-Stack · Django · React · Docker</span>
+            </div>
+            <div class="project__body">
+              <h3>Financial Wellness Assessment Platform</h3>
+              <p>Full-stack web app that scores users across 4 financial dimensions — Banking Access, Emergency Preparedness, Spending Behavior, and Financial Literacy — using an adaptive 9-question risk engine that personalizes questions based on employment type and age range.</p>
+              <p>Django REST Framework + JWT auth backend, React frontend, PostgreSQL, and Docker Compose deployment. Risk tiers (Low / Medium / High) computed from a weighted scoring algorithm with per-section breakdowns.</p>
+              <div class="tags">
+                <span>Django REST</span><span>React</span><span>PostgreSQL</span><span>JWT Auth</span><span>Docker</span><span>Risk Scoring</span>
+              </div>
+              <a class="link" href="https://github.com/Chidipothusiritha/financial-wellness" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+        </div>
+
         <p class="small-note">
           More end-to-end data and ML projects available on GitHub.
         </p>
@@ -501,7 +575,7 @@
     </section>
 
     <!-- RESEARCH -->
-    <section id="research" class="section alt">
+    <section id="research" class="section">
       <div class="wrap">
         <h2 class="section__title">Research</h2>
 
