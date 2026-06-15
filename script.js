@@ -261,7 +261,7 @@ If asked something not covered here, say you don't have that detail and suggest 
           "Authorization": `Bearer ${GROQ_API_KEY}`
         },
         body: JSON.stringify({
-          model: "llama-3.1-70b-versatile",
+          model: "llama-3.3-70b-versatile",
           messages: history,
           max_tokens: 300,
           temperature: 0.7
