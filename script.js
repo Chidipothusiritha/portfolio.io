@@ -114,8 +114,35 @@ document.addEventListener("DOMContentLoaded", () => {
     a.addEventListener("click", () => {
       navLinks.forEach((x) => x.classList.remove("active"));
       a.classList.add("active");
+      // Close mobile nav on link click
+      nav.classList.remove("open");
+      hamburger.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
     });
   });
+
+  // -----------------------------
+  // Hamburger menu
+  // -----------------------------
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector(".nav");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      hamburger.classList.toggle("open", isOpen);
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close on outside click
+    document.addEventListener("click", (e) => {
+      if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+        nav.classList.remove("open");
+        hamburger.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   // -----------------------------
   // Scroll-reveal for cards
